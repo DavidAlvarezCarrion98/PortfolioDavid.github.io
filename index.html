@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Desarrollador</title>
+
+    <!--CSS-->
+    <!--https://boxicons.com/?query=code-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Diseno header-->
+    <header class="header">
+        <a href="javascript:void(0)" class="logo">Portfolio Profesional</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="javascript:void(0)" onclick="scrollToSection('home')" id="link-home" class="active" >Home</a>
+            <a href="javascript:void(0)" onclick="scrollToSection('about')" id="link-about">About</a>
+            <a href="javascript:void(0)" onclick="scrollToSection('services')" id="link-services">Experience</a>
+            <a href="javascript:void(0)" onclick="scrollToSection('portfolio')" id="link-portfolio">Portfolio</a>
+            <a href="javascript:void(0)" onclick="scrollToSection('contacto')" id="link-contacto">Contact</a>
+        </nav>
+    </header>
+
+    <!--Home section design-->
+
+    <section class="home" id="home">
+    <div class="home-content">
+    <h3>hola soy yo</h3>
+    <h1>david alvarez carrion</h1>
+    <h3>Y soy un <span class="multiple-text"></span></h3>
+    <p>Quedate y te cuento un poco... </p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/davidalvarezcarriondesarrollador/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+        <a href="https://github.com/DavidAlvarezCarrion98" target="_blank"><i class='bx bxl-github' ></i></a>
+    </div>
+    <a href="docs/DavidCV.pdf" download="DavidCV.pdf" class="btn" target="_blank">Descargar CV</a>
+    </div>
+
+    <div class="home-img">
+    <img src="images/david.png" alt="mi foto de desarrollador">  
+    </div>
+    </section>
+
+    <!--otra section design-->
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/aboutMe.png" alt="mi foto con toby"> 
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">Sobre <span>Mi</span></h2>
+        <h3>Fullstack Developer</h3>
+        <p>Soy originario de Ovente con raíces granadinas, y siempre he sentido un gran interés por el mundo de los videojuegos, lo que me llevó a estudiar un ciclo formativo de grado superior en 
+            Desarrollo de Aplicaciones Multiplataforma. A lo largo de mi formación, complementada con diversos cursos y experiencia profesional, he adquirido conocimientos sólidos sobre el desarrollo
+             de aplicaciones web, móviles y de escritorio. Aunque no me considero un experto en programación, mis tres años de experiencia me han permitido crecer rápidamente en este campo. La motivación 
+             por aprender y continuar desarrollándome ha sido una constante desde que comencé, y sigue fortaleciéndose día a día.
+             <br /><br />
+            Si confían en mí, no solo tendrán mi gratitud por la oportunidad, sino también mi total compromiso profesional con el proyecto y un trato cordial y colaborativo con el equipo. Además, valoro profundamente
+             el equilibrio entre la vida laboral y personal. Cualquier empresa que me permita pasar más tiempo con mi perro tendrá mi lealtad y será el tipo de lugar en el que me gustaría crecer y contribuir a largo plazo.
+        </p>
+    </div>
+    </section>
+    
+    <!--SERVICIOS section design-->
+
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>Conocimientos</span></h2>
+
+        <div class="services-container">
+
+            <div class="services-box">
+               <i class='bx bx-code-alt'></i>
+                  <h3>Frontend</h3>
+                   <p>Tengo experiencia en el desarrollo web utilizando HTML, CSS, JavaScript y frameworks como React y Angular para crear aplicaciones
+                     interactivas. En el desarrollo de aplicaciones móviles, he utilizado React Native y Xamarin. Para aplicaciones de escritorio, 
+                     he trabajado con WPF.</p>
+                     
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-visual-studio'></i>
+                   <h3>Backend</h3>
+                    <p>Desarrollando con C# principalmente en .NET. Ejecución de la lógica empresarial,
+                         gestión de la seguridad y la comunicación con servidores, conexiones con bases de datos, implementación de 
+                        background jobs, scraping dinámico, gestión de documentación...</p>
+                      
+             </div>
+
+            <div class="services-box">
+                <i class='bx bxl-git'></i>
+                   <h3>Azure DevOps</h3>
+                    <p>Tengo experiencia en Azure DevOps, trabajando tanto solo como en colaboración con otras empresas, incluyendo el control de versiones,
+                         la adjudicación de tareas y la planificación de sprints, siempre enfocado en cumplir con los objetivos marcados por la empresa.</p>
+                      
+             </div>
+
+        </div>
+
+    </section>
+
+    <!--otra section design-->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="images/fondoproyectos.jpg" alt="algo relacionado con mis proyectos">
+                <div class="portfolio-layer">
+                    <h4>Gestora de Residuos Provincial</h4>
+                    <p><strong>Desarrollado en Avangroup. Proyecto en el que desarrollé  la aplicacion web, móvil y de escritorio para una gestora de residuos a nivel
+                         provincial. Mis funciones incluyeron funcionalidades clave como el pesaje de camiones a la entrada y salida de los depósitos de residuos,
+                          la generación de albaranes y el cálculo del importe a pagar por estos, así como la gestión de documentación necesaria. Implementé la activación de códigos
+                           QR para el acceso a la planta, y gestioné sistemas para la administración de empresas afiliadas y transportistas.</strong></p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/fondoproyectos3.png" alt="algo relacionado con mis proyectos">
+                <div class="portfolio-layer">
+                    <h4>Monitorización de Fuentes Públicas</h4>
+                    <p><strong>Desarrollado en Leasba Consulting.Proyecto en el que desarrollé una aplicación de backend que utilizaba herramientas OSSINT, crawlers públicos y scraping de páginas de información 
+                        para analizar diferentes tipos de datos y detectar posibles intentos de estafa o fraude. Además, monitoreaba a empresas y usuarios suscritos a la aplicación para 
+                        identificar robos de información y enviaba notificaciones push a través de Firebase para mantenerlos informados.</strong></p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/fondoproyectos2.png" alt="algo relacionado con mis proyectos">
+                <div class="portfolio-layer">
+                    <h4><strong>App Protección Mensajería</h4>
+                    <p>Desarrollado en Leasba Consulting.Proyecto en el que desarrollé una aplicación móvil en la que tanto usuarios como empresas podían registrarse. 
+                        La aplicación detectaba mensajes entrantes por SMS y, mediante análisis externo, proporcionaba información sobre si esos mensajes eran veraces o fraudulentos. 
+                        Además, ofrecíamos alertas sobre campañas de phishing y contenido de concienciación para educar a los usuarios sobre posibles estafas.</strong></p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+<!--
+            <div class="portfolio-box">
+                <img src="images/fondoproyectos4.png" alt="algo relacionado con mis proyectos">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, autem est! Nulla quibusdam, qui repellendus saepe totam consectetur quia aperiam delectus! Vel excepturi nihil ducimus aut sint harum nobis incidunt?</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </section>
+
+    <!--otra section design-->
+
+    <section class="contacto" id="contacto">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+         
+      
+        <div class="input-box dashboard">
+            <h2>Copia mi correo o rellena el formulario. !A tu elección¡</h2>
+
+            <input type="text" id="mailprofesional" class="mailprofesional" value="davidalvarezcarrionprofesional@gmail.com" disabled>
+            <input type="submit" value="Copiar" id="btnCopia" onclick="copiarCorreo()" class="btn copy">
+        </div> 
+       
+        <form action="https://formsubmit.co/davidalvarezcarrionprofesional@gmail.com"  method="POST">
+
+       <div class="input-box">
+                <input type="text" name="name" placeholder="Full name" required>
+                <input type="email" name="email" placeholder="Email Adress" required>
+        </div>
+
+        <div class="input-box">
+                <input type="number" name="number" placeholder="mobile number" required>
+                <input type="text" name="subject" placeholder="Email subject" required>
+        </div>
+
+            <textarea name="coments" cols="30" rows="10" placeholder="your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+
+           <input type="hidden" name="_next" value="file:///C:/Users/34689/Desktop/Proyectos/Portafolio%20Web/index.html?#contacto">
+           <input type="hidden" name="_captcha" value="false">
+        </form>
+
+    </section>
+
+    <!--footer design-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; Libre de uso para aprender, mirar mi <a href="https://github.com/DavidAlvarezCarrion98" target="_blank" class="lastGithub">GitHub</a>!</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="javascript:void(0)" onclick="scrollToHomeFromFooter()"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+
+    <!--JS-->
+    <!--https://scrollrevealjs.org/-->
+    <!--https://sweetalert2.github.io/-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
