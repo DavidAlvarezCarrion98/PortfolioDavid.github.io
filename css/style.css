@@ -93,7 +93,7 @@ margin-left: 4rem;
 }
 
 .home-img{
-    width: 20vw;
+    width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -206,17 +206,19 @@ box-shadow: 0 0 1rem var(--main-color);
 }
 
 .services-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr));
     gap: 2rem;
+    align-items: stretch;
 }
 
 .services-container .services-box{
-    flex: 1 1 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
     background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
+    padding: 3rem 2rem 3rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
@@ -227,19 +229,37 @@ box-shadow: 0 0 1rem var(--main-color);
     border-color: var(--main-color);
 }
 
-.services-box i{
-    font-size: 7rem;
+.services-box-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.6rem;
+    height: 9.6rem;
+    flex-shrink: 0;
+    margin-bottom: 1.2rem;
+}
+
+.services-box-icon i{
+    font-size: 6.4rem;
+    line-height: 1;
     color: var(--main-color);
 }
 
 .services-box h3{
     font-size: 2.6rem;
-  
+    line-height: 1.25;
+    max-width: 32ch;
+    flex-shrink: 0;
 }
 
 .services-box p{
-    font-size: 1.6rem;    
-    margin: 1rem 0 3rem;
+    font-size: 1.6rem;
+    margin: 1.2rem 0 0;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 52ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portfolio{
