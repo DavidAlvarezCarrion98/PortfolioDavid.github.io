@@ -69,6 +69,39 @@ section.contacto{
     cursor: default;
 }
 
+.header-tools{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lang-switch{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.lang-btn{
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    transition: color .3s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active{
+    color: var(--main-color);
+}
+
+.lang-divider{
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 1.4rem;
+    user-select: none;
+}
+
 .navbar a{
 font-size: 1.7rem;
 color: var(--text-color);
@@ -220,6 +253,77 @@ box-shadow: 0 0 1rem var(--main-color);
     margin: 2rem 0 3rem;
     line-height: 1.7;
     max-width: 72ch;
+}
+
+.experience h2{
+    margin-bottom: 5rem;
+}
+
+.experience-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+.experience-box{
+    display: grid;
+    grid-template-columns: minmax(12rem, 16rem) 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    background: var(--second-bg-color);
+    border: .2rem solid var(--bg-color);
+    border-left: .4rem solid var(--main-color);
+    border-radius: 1.6rem;
+    padding: 2.5rem 3rem;
+    transition: .3s ease;
+}
+
+.experience-box:hover{
+    border-color: var(--main-color);
+    box-shadow: 0 0 1.2rem rgba(0, 238, 255, 0.12);
+}
+
+.experience-date{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--main-color);
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+.experience-content h3{
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.experience-content h4{
+    font-size: 1.8rem;
+    color: var(--main-color);
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.experience-content p{
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 1.6rem;
+}
+
+.experience-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+.experience-tags li{
+    font-size: 1.3rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    border: .1rem solid var(--main-color);
+    color: var(--main-color);
 }
 
 .services h2{
@@ -414,6 +518,15 @@ box-shadow: 0 0 1rem var(--main-color);
     resize: none;
 }
 
+.honeypot{
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .contacto form .btn{
     margin-top: 2rem;
     cursor: pointer;
@@ -485,6 +598,16 @@ input[type=number] { -moz-appearance:textfield; }
         padding-bottom: 7rem;
     }
 
+    .experience h2{
+        margin-bottom: 3rem;
+    }
+
+    .experience-box{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
     .portfolio{
          padding-bottom: 7rem;
     }
@@ -500,6 +623,14 @@ input[type=number] { -moz-appearance:textfield; }
 }
 
 @media (max-width: 768px){
+
+    .header-tools{
+        gap: 1.2rem;
+    }
+
+    .lang-btn{
+        font-size: 1.7rem;
+    }
 
     #menu-icon{
         display: block;

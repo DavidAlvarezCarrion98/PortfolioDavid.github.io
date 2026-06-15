@@ -1,208 +1,483 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
+
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Desarrollador</title>
+    <title>David Álvarez Carrión | Desarrollador Fullstack</title>
+
+    <meta name="description" id="meta-description" content="Portfolio de David Álvarez Carrión, desarrollador fullstack con casi 5 años de experiencia en .NET, React, apps móviles y cloud.">
+    <meta name="author" content="David Álvarez Carrión">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1f242d">
+
+    <link rel="canonical" href="https://davidalvarezcarrion98.github.io/PortfolioDavid.github.io/">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://davidalvarezcarrion98.github.io/PortfolioDavid.github.io/">
+    <meta property="og:site_name" content="Portfolio David Álvarez Carrión">
+    <meta property="og:title" id="og-title" content="David Álvarez Carrión | Desarrollador Fullstack">
+    <meta property="og:description" id="og-description" content="Portfolio de David Álvarez Carrión, desarrollador fullstack con casi 5 años de experiencia en .NET, React, apps móviles y cloud.">
+    <meta property="og:image" content="https://davidalvarezcarrion98.github.io/PortfolioDavid.github.io/images/david.png">
+    <meta property="og:locale" id="og-locale" content="es_ES">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="twitter-title" content="David Álvarez Carrión | Desarrollador Fullstack">
+    <meta name="twitter:description" id="twitter-description" content="Portfolio de David Álvarez Carrión, desarrollador fullstack con casi 5 años de experiencia en .NET, React, apps móviles y cloud.">
+    <meta name="twitter:image" content="https://davidalvarezcarrion98.github.io/PortfolioDavid.github.io/images/david.png">
 
     <!--CSS-->
+
     <!--https://boxicons.com/?query=code-->
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
+
 
 <body>
 
+
+
     <!--Diseno header-->
+
     <header class="header">
-        <a href="javascript:void(0)" class="logo">Portfolio Profesional</a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <a href="javascript:void(0)" class="logo" data-i18n="logo">Portfolio Profesional</a>
 
-        <nav class="navbar">
-            <a href="javascript:void(0)" onclick="scrollToSection('home')" id="link-home" class="active" >Home</a>
-            <a href="javascript:void(0)" onclick="scrollToSection('about')" id="link-about">About</a>
-            <a href="javascript:void(0)" onclick="scrollToSection('services')" id="link-services">Experience</a>
-            <a href="javascript:void(0)" onclick="scrollToSection('portfolio')" id="link-portfolio">Portfolio</a>
-            <a href="javascript:void(0)" onclick="scrollToSection('contacto')" id="link-contacto">Contact</a>
-        </nav>
+
+
+        <div class="header-tools">
+
+            <div class="lang-switch" role="group" aria-label="Seleccionar idioma">
+
+                <button type="button" class="lang-btn active" data-lang="es" aria-pressed="true">ES</button>
+
+                <span class="lang-divider" aria-hidden="true">|</span>
+
+                <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+
+            </div>
+
+
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+
+
+            <nav class="navbar">
+
+                <a href="javascript:void(0)" onclick="scrollToSection('home')" id="link-home" class="active" data-i18n="nav_home">Inicio</a>
+
+                <a href="javascript:void(0)" onclick="scrollToSection('about')" id="link-about" data-i18n="nav_about">Sobre mí</a>
+
+                <a href="javascript:void(0)" onclick="scrollToSection('experience')" id="link-experience" data-i18n="nav_experience">Experiencia</a>
+
+                <a href="javascript:void(0)" onclick="scrollToSection('services')" id="link-services" data-i18n="nav_stack">Stack</a>
+
+                <a href="javascript:void(0)" onclick="scrollToSection('portfolio')" id="link-portfolio" data-i18n="nav_portfolio">Proyectos</a>
+
+                <a href="javascript:void(0)" onclick="scrollToSection('contacto')" id="link-contacto" data-i18n="nav_contact">Contacto</a>
+
+            </nav>
+
+        </div>
+
     </header>
+
+
 
     <!--Home section design-->
 
+
+
     <section class="home" id="home">
+
     <div class="home-content">
-    <h3>hola soy yo</h3>
+
+    <h3 data-i18n="home_greeting">Hola, soy</h3>
+
     <h1>David Álvarez Carrión</h1>
-    <h3>Y soy un <span class="multiple-text"></span></h3>
-    <p>Quedate y te cuento un poco... </p>
+
+    <h3><span data-i18n="home_role_intro">Y soy un</span> <span class="multiple-text"></span></h3>
+
+    <p data-i18n="home_subtitle">Desarrollador Fullstack · .NET, React y apps móviles · Casi 5 años de experiencia</p>
+
     <div class="social-media">
-        <a href="https://www.linkedin.com/in/davidalvarezcarriondesarrollador/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-        <a href="https://github.com/DavidAlvarezCarrion98" target="_blank"><i class='bx bxl-github' ></i></a>
-    </div>
-    <a href="docs/DavidCV.pdf" download="DavidCV.pdf" class="btn" target="_blank">Descargar CV</a>
+
+        <a href="https://www.linkedin.com/in/davidalvarezcarriondesarrollador/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin' ></i></a>
+
+        <a href="https://github.com/DavidAlvarezCarrion98" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github' ></i></a>
+
     </div>
 
-    <div class="home-img">
-    <img src="images/david.png" alt="mi foto de desarrollador">  
+    <a href="docs/DavidCV.pdf" download="DavidCV.pdf" class="btn" target="_blank" data-i18n="home_cv">Descargar CV</a>
+
     </div>
+
+
+
+    <div class="home-img">
+
+    <img src="images/david.png" alt="Foto de David Álvarez Carrión, desarrollador" data-i18n-alt="home_img_alt">  
+
+    </div>
+
     </section>
+
+
 
     <!--otra section design-->
 
+
+
 <section class="about" id="about">
+
     <div class="about-img">
-        <img src="images/aboutMe.png" alt="mi foto con toby"> 
+
+        <img src="images/aboutMe.png" alt="Foto de David con su perro Toby" data-i18n-alt="about_img_alt"> 
+
     </div>
+
+
 
     <div class="about-content">
-        <h2 class="heading">Sobre <span>Mi</span></h2>
-        <h3>Fullstack Developer</h3>
-        <p>Soy originario de Oviedo con raíces granadinas, y siempre he sentido un gran interés por el mundo de los videojuegos, lo que me llevó a estudiar un ciclo formativo de grado superior en 
-            Desarrollo de Aplicaciones Multiplataforma. A lo largo de mi formación, complementada con diversos cursos y experiencia profesional, he adquirido conocimientos sólidos sobre el desarrollo
-             de aplicaciones web, móviles y de escritorio. Aunque no me considero un experto en programación, mis tres años de experiencia me han permitido crecer rápidamente en este campo. La motivación 
-             por aprender y continuar desarrollándome ha sido una constante desde que comencé, y sigue fortaleciéndose día a día.
-             <br /><br />
-            Si confían en mí, no solo tendrán mi gratitud por la oportunidad, sino también mi total compromiso profesional con el proyecto y un trato cordial y colaborativo con el equipo. Además, valoro profundamente
-             el equilibrio entre la vida laboral y personal. Cualquier empresa que me permita pasar más tiempo con mi perro tendrá mi lealtad y será el tipo de lugar en el que me gustaría crecer y contribuir a largo plazo.
-        </p>
-    </div>
-    </section>
-    
-    <!--SERVICIOS section design-->
 
-    <section class="services" id="services">
-        <h2 class="heading">Stack <span>Tecnológico</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <span class="services-box-icon" aria-hidden="true"><i class='bx bx-code-alt'></i></span>
-                <h3>Frontend y Móvil</h3>
-                <p>
-                    Desarrollo de interfaces web con HTML, CSS, JavaScript/TypeScript, React, Next.js y Angular,
-                    orientadas a experiencia de usuario y rendimiento. En móvil, experiencia con React Native,
-                    Xamarin y Android nativo en aplicaciones conectadas a APIs.
-                </p>
-            </div>
-            <div class="services-box">
-                <span class="services-box-icon" aria-hidden="true"><i class='bx bxl-visual-studio'></i></span>
-                <h3>Backend</h3>
-                <p>
-                    Desarrollo de servicios y APIs REST con C# y .NET (ASP.NET Core y Azure Functions),
-                    aplicando arquitectura limpia, seguridad con JWT y API keys, y acceso a datos con
-                    Entity Framework Core sobre SQL Server, PostgreSQL y MySQL.
-                </p>
-            </div>
-            <div class="services-box">
-                <span class="services-box-icon" aria-hidden="true"><i class='bx bxl-git'></i></span>
-                <h3>Cloud, DevOps y Calidad</h3>
-                <p>
-                    Trabajo con Azure, Docker, Git y Azure DevOps para control de versiones, CI/CD y entrega continua.
-                    Gestión ágil con Scrum, colaboración en equipos multidisciplinares y enfoque en calidad de código,
-                    pruebas y mejora continua.
-                </p>
-            </div>
+        <h2 class="heading" data-i18n-html="about_heading">Sobre <span>mi</span></h2>
+
+        <h3 data-i18n="about_role">Desarrollador Fullstack</h3>
+
+        <p data-i18n-html="about_text">Soy desarrollador fullstack originario de Oviedo, con formación en Desarrollo de Aplicaciones Multiplataforma y casi 5 años de experiencia construyendo aplicaciones web, móviles y de escritorio. Me especializo en el desarrollo de soluciones empresariales con .NET, React y entornos cloud, orientadas a resolver necesidades reales de negocio.<br /><br />He trabajado en equipos pequeños asumiendo funciones en backend, frontend y despliegue, lo que me ha permitido crecer rápido y adaptarme a distintos proyectos. Me caracterizo por el compromiso con el equipo, la comunicación clara con clientes y la mejora continua de la calidad del software. Valoro el equilibrio entre vida profesional y personal, porque creo que contribuye a mejores resultados a largo plazo.</p>
+
+    </div>
+
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="heading" data-i18n-html="experience_heading">Experiencia <span>profesional</span></h2>
+
+        <div class="experience-container">
+            <article class="experience-box">
+                <p class="experience-date" data-i18n="exp_leasba_date">2024 - 2026</p>
+                <div class="experience-content">
+                    <h3 data-i18n="exp_leasba_role">Desarrollador FullStack</h3>
+                    <h4 data-i18n="exp_leasba_company">Leasba</h4>
+                    <p data-i18n="exp_leasba_text">Desarrollo fullstack de APIs y servicios en .NET 8 con PostgreSQL y EF Core, BFF en ASP.NET Core, autenticación JWT y API keys, y despliegues en Azure con Docker y Azure DevOps. Desarrollo del cuadro de mando web con Next.js y React, y app móvil en React Native para detección de fraude en mensajería. Integración con sistemas de ciberinteligencia (MISP, CCN-CERT, Matrix y Telegram).</p>
+                    <ul class="experience-tags" aria-label="Tecnologías">
+                        <li>.NET 8</li>
+                        <li>ASP.NET Core</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>React Native</li>
+                        <li>PostgreSQL</li>
+                        <li>Azure</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="experience-box">
+                <p class="experience-date" data-i18n="exp_avan_date">2022 - 2023</p>
+                <div class="experience-content">
+                    <h3 data-i18n="exp_avan_role">Desarrollador FullStack</h3>
+                    <h4 data-i18n="exp_avan_company">AvanGroup</h4>
+                    <p data-i18n="exp_avan_text">Desarrollo fullstack de soluciones empresariales en .NET con lógica de negocio y APIs REST para entornos web, móvil y escritorio. Interfaces web con React y aplicaciones de escritorio con WPF/WinForms. Apps móviles con Xamarin integradas a servicios corporativos. Planificación y seguimiento con Azure Boards (Scrum) y control de versiones en Azure DevOps.</p>
+                    <ul class="experience-tags" aria-label="Tecnologías">
+                        <li>C#</li>
+                        <li>.NET</li>
+                        <li>React</li>
+                        <li>Xamarin</li>
+                        <li>WPF</li>
+                        <li>SQL Server</li>
+                        <li>Azure DevOps</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="experience-box">
+                <p class="experience-date" data-i18n="exp_seidel_date">2020 - 2021</p>
+                <div class="experience-content">
+                    <h3 data-i18n="exp_seidel_role">Desarrollador FullStack</h3>
+                    <h4 data-i18n="exp_seidel_company">Seidel Ingeniería</h4>
+                    <p data-i18n="exp_seidel_text">Desarrollo fullstack de aplicación de escritorio para gestión integral de almacenes en el Principado de Asturias: control de stock, generación de albaranes, facturación y módulos de centralita para atención y comunicación con clientes.</p>
+                    <ul class="experience-tags" aria-label="Tecnologías">
+                        <li>C#</li>
+                        <li>.NET</li>
+                        <li>WPF</li>
+                        <li>WinForms</li>
+                        <li>SQL Server</li>
+                    </ul>
+                </div>
+            </article>
         </div>
     </section>
 
+    <!--SERVICIOS section design-->
+
+
+
+    <section class="services" id="services">
+
+        <h2 class="heading" data-i18n-html="services_heading">Stack <span>Tecnológico</span></h2>
+
+        <div class="services-container">
+
+            <div class="services-box">
+
+                <span class="services-box-icon" aria-hidden="true"><i class='bx bx-code-alt'></i></span>
+
+                <h3 data-i18n="stack_frontend_title">Frontend y Móvil</h3>
+
+                <p data-i18n="stack_frontend_text">
+
+                    Desarrollo de interfaces web con HTML, CSS, JavaScript/TypeScript, React, Next.js y Angular,
+
+                    orientadas a experiencia de usuario y rendimiento. En móvil, experiencia con React Native,
+
+                    Xamarin y Android nativo en aplicaciones conectadas a APIs.
+
+                </p>
+
+            </div>
+
+            <div class="services-box">
+
+                <span class="services-box-icon" aria-hidden="true"><i class='bx bxl-visual-studio'></i></span>
+
+                <h3 data-i18n="stack_backend_title">Backend</h3>
+
+                <p data-i18n="stack_backend_text">
+
+                    Desarrollo de servicios y APIs REST con C# y .NET (ASP.NET Core y Azure Functions),
+
+                    aplicando arquitectura limpia, seguridad con JWT y API keys, y acceso a datos con
+
+                    Entity Framework Core sobre SQL Server, PostgreSQL y MySQL.
+
+                </p>
+
+            </div>
+
+            <div class="services-box">
+
+                <span class="services-box-icon" aria-hidden="true"><i class='bx bxl-git'></i></span>
+
+                <h3 data-i18n="stack_devops_title">Cloud, DevOps y Calidad</h3>
+
+                <p data-i18n="stack_devops_text">
+
+                    Trabajo con Azure, Docker, Git y Azure DevOps para control de versiones, CI/CD y entrega continua.
+
+                    Gestión ágil con Scrum, colaboración en equipos multidisciplinares y enfoque en calidad de código,
+
+                    pruebas y mejora continua.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
     <!--otra section design-->
 
+
+
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <h2 class="heading" data-i18n-html="portfolio_heading">Proyectos <span>destacados</span></h2>
+
+
 
         <div class="portfolio-container">
 
+
+
             <div class="portfolio-box">
-                <img src="images/fondoproyectos.jpg" alt="algo relacionado con mis proyectos">
+
+                <img src="images/fondoproyectos.jpg" alt="Imagen del proyecto" data-i18n-alt="portfolio_img_alt">
+
                 <div class="portfolio-layer">
-                    <h4>Gestora de Residuos Provincial</h4>
-                    <p><strong> Proyecto en el que desarrollé  la aplicacion web, móvil y de escritorio para una gestora de residuos a nivel
+
+                    <h4 data-i18n="project1_title">Gestora de Residuos Provincial</h4>
+
+                    <p><strong data-i18n="project1_text"> Proyecto en el que desarrollé  la aplicacion web, móvil y de escritorio para una gestora de residuos a nivel
+
                          provincial. Mis funciones incluyeron funcionalidades clave como el pesaje de camiones a la entrada y salida de los depósitos de residuos,
+
                           la generación de albaranes y el cálculo del importe a pagar por estos, así como la gestión de documentación necesaria. Implementé la activación de códigos
+
                            QR para el acceso a la planta, y gestioné sistemas para la administración de empresas afiliadas y transportistas.</strong></p>
+
                 </div>
+
             </div>
 
+
+
             <div class="portfolio-box">
-                <img src="images/fondoproyectos3.png" alt="algo relacionado con mis proyectos">
+
+                <img src="images/fondoproyectos3.png" alt="Imagen del proyecto" data-i18n-alt="portfolio_img_alt">
+
                 <div class="portfolio-layer">
-                    <h4>Protección Mensajería</h4>
-                    <p><strong>Proyecto en el que participé en el desarrollo integral del ecosistema CMM, conectando la app de protección de mensajería, el cuadro de mando y los servicios
+
+                    <h4 data-i18n="project2_title">Protección Mensajería</h4>
+
+                    <p><strong data-i18n="project2_text">Proyecto en el que participé en el desarrollo integral del ecosistema CMM, conectando la app de protección de mensajería, el cuadro de mando y los servicios
+
                          de monitorización en una misma solución. Mi trabajo se centró en construir y evolucionar la base tecnológica que permitía centralizar información, coordinar procesos
+
                           y dar soporte a la detección de riesgos y fraudes. También colaboré en la integración de servicios para mejorar la comunicación entre sistemas y facilitar la toma de 
+
                           decisiones en los equipos operativos.</strong></p>
+
                 </div>
+
             </div>
 
+
+
             <div class="portfolio-box">
-                <img src="images/fondoproyectos2.png" alt="algo relacionado con mis proyectos">
+
+                <img src="images/fondoproyectos2.png" alt="Imagen del proyecto" data-i18n-alt="portfolio_img_alt">
+
                 <div class="portfolio-layer">
-                    <h4>Gestión de Almacenes</h4>
-                    <p><strong>Proyecto en el que desarrollé una aplicación de escritorio para la gestión integral de almacenes en el Principado de Asturias. Mi trabajo incluyó el control
+
+                    <h4 data-i18n="project3_title">Gestión de Almacenes</h4>
+
+                    <p><strong data-i18n="project3_text">Proyecto en el que desarrollé una aplicación de escritorio para la gestión integral de almacenes en el Principado de Asturias. Mi trabajo incluyó el control
+
                          de stock, la generación de albaranes y facturación, así como funcionalidades de centralita para mejorar la comunicación con clientes y agilizar la operativa diaria.</strong></p>
+
                     
+
                 </div>
+
             </div>
+
+
 
             
+
         </div>
+
     </section>
+
+
 
     <!--otra section design-->
 
+
+
     <section class="contacto" id="contacto">
-        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <h2 class="heading" data-i18n-html="contact_heading">Ponte en <span>contacto</span></h2>
+
+
 
          
+
       
+
         <div class="input-box dashboard">
-            <h2>Copia mi correo o rellena el formulario. !A tu elección¡</h2>
+
+            <h2 data-i18n="contact_intro">Copia mi correo o rellena el formulario. ¡A tu elección!</h2>
+
+
 
             <input type="text" id="mailprofesional" class="mailprofesional" value="davidalvarezcarrionprofesional@gmail.com" disabled>
-            <input type="submit" value="Copiar" id="btnCopia" onclick="copiarCorreo()" class="btn copy">
+
+            <input type="submit" value="Copiar" id="btnCopia" onclick="copiarCorreo()" class="btn copy" data-i18n="contact_copy">
+
         </div> 
 
-        <form action="https://formsubmit.co/cff344c233af12c6a5a91f4ece3c05de"  method="POST">
+
+
+        <form id="contact-form" action="https://formsubmit.co/ajax/cff344c233af12c6a5a91f4ece3c05de" method="POST" novalidate>
 
        <div class="input-box">
-                <input type="text" name="name" placeholder="Full name" required>
-                <input type="email" name="email" placeholder="Email Adress" required>
+                <input type="text" name="name" data-i18n-placeholder="form_name" placeholder="Nombre completo" required>
+                <input type="email" name="email" data-i18n-placeholder="form_email" placeholder="Correo electrónico" required>
         </div>
 
         <div class="input-box">
-                <input type="number" name="number" placeholder="mobile number" required>
-                <input type="text" name="subject" placeholder="Email subject" required>
+                <input type="tel" name="number" data-i18n-placeholder="form_phone" placeholder="Teléfono (opcional)">
+                <input type="text" name="subject" data-i18n-placeholder="form_subject" placeholder="Asunto" required>
         </div>
 
-            <textarea name="coments" cols="30" rows="10" placeholder="your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="message" cols="30" rows="10" data-i18n-placeholder="form_message" placeholder="Tu mensaje" required></textarea>
+            <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="submit" value="Enviar mensaje" class="btn" data-i18n="form_submit">
 
-           <input type="hidden" name="_next" value="https://davidalvarezcarrion98.github.io/PortfolioDavid.github.io/#contacto">
-           <input type="hidden" name="_captcha" value="false">
+           <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio de David Álvarez">
+           <input type="hidden" name="_captcha" value="true">
         </form>
+
+
 
     </section>
 
+
+
     <!--footer design-->
+
     <footer class="footer">
+
         <div class="footer-text">
-            <p>Copyright &copy; Libre de uso para aprender, mirar mi <a href="https://github.com/DavidAlvarezCarrion98" target="_blank" class="lastGithub">GitHub</a>!</p>
+
+            <p data-i18n-html="footer_text">Copyright &copy; Libre de uso para aprender, mirar mi <a href="https://github.com/DavidAlvarezCarrion98" target="_blank" class="lastGithub">GitHub</a>!</p>
+
         </div>
+
+
 
         <div class="footer-iconTop">
-            <a href="javascript:void(0)" onclick="scrollToHomeFromFooter()"><i class='bx bx-up-arrow-alt' ></i></a>
+
+            <a href="javascript:void(0)" onclick="scrollToHomeFromFooter()" aria-label="Volver arriba"><i class='bx bx-up-arrow-alt' ></i></a>
+
         </div>
+
     </footer>
 
+
+
     <!--JS-->
+
     <!--https://scrollrevealjs.org/-->
+
     <!--https://sweetalert2.github.io/-->
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="js/i18n.js"></script>
+
     <script src="js/script.js"></script>
+
+
 
 </body>
 
+
+
 </html>
+
+
